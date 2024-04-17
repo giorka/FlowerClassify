@@ -9,7 +9,7 @@ import settings
 instance: YOLO = YOLO(settings.BASE_MODEL)
 
 if not Path(settings.MODEL_PATH).is_file():
-    instance.train(data='flowers', epochs=3)
+    instance.train(data='flowers', epochs=settings.EPOCHS)
 
 model: YOLO = YOLO(settings.MODEL_PATH)
 folders: iter = Path('datasets/flowers/train').iterdir()
