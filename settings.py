@@ -1,0 +1,2 @@
+BASE_MODEL: str = 'yolov8n-cls.pt'
+MODEL_PATH: str = r'runs/classify/train/weights/best.pt'
